@@ -15,4 +15,5 @@ I run with something like
                --device /dev/snd \
                --device /dev/dri \
                --name firefox \
-               firefox https://www.youtube.com/html5
+               martinjohn/firefox:alpine \
+               https://www.youtube.com/html5
