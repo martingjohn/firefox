@@ -4,9 +4,10 @@ USER root
 
 RUN apk update \
  && apk add --no-cache \
-            firefox \
+            firefox-esr \
             libcanberra-gtk3 \
-            ttf-freefont
+            ttf-freefont \
+            vlc
 
 USER $user
 
