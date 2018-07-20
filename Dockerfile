@@ -7,8 +7,8 @@ RUN apk update \
             firefox-esr \
             libcanberra-gtk3 \
             ttf-freefont \
-            vlc
+            ffmpeg-libs
 
 USER $user
 
-ENTRYPOINT "firefox"
+ENTRYPOINT ["firefox"]
