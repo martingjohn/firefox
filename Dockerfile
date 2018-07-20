@@ -1,12 +1,12 @@
-FROM martinjohn/x-template
+FROM martinjohn/x-template:alpine
 
 USER root
 
-RUN apt-get update \
- && apt-get install -y \
-            firefox  \
-            libcanberra-gtk3-0 \
-            vlc
+RUN apk update \
+ && apk add --no-cache \
+            firefox \
+            libcanberra-gtk3 \
+            ttf-freefont
 
 USER $user
 
